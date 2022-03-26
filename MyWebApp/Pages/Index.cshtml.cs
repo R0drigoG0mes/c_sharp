@@ -6,7 +6,6 @@ namespace MyWebApp.Pages;
 
 public class IndexModel : PageModel
 {
-    public int le = 9;
     private readonly ILogger<IndexModel> _logger;
 
 
@@ -19,5 +18,12 @@ public class IndexModel : PageModel
     public void OnGet()
     {
 
+    }
+
+    private int currentCount = 0;
+
+    public void IncrementCount()
+    {
+        currentCount++;
     }
 }
