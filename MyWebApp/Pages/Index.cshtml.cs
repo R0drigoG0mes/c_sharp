@@ -6,6 +6,8 @@ namespace MyWebApp.Pages;
 
 public class IndexModel : PageModel
 {
+
+    public int legal = 10;
     private readonly ILogger<IndexModel> _logger;
 
 
